@@ -1,6 +1,6 @@
 {
-    "name": "blomstra/search",
-    "description": "Replaces Flarum search with one powered by an elastic search server.",
+    "name": "ivampiresp/blomstra-search",
+    "description": "Replaces Flarum search with one powered by an elastic search server. without ssl",
     "keywords": [
         "extension",
         "flarum",
