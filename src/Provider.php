@@ -46,7 +46,8 @@ class Provider extends AbstractServiceProvider
 
         $this->container->singleton(Elastic::class, function (Container $container) use ($settings, $config) {
             $builder = ClientBuilder::create()
-                ->setHosts([$settings->get('blomstra-search.elastic-endpoint')]);
+                ->setHosts([$settings->get('blomstra-search.elastic-endpoint')])
+                ->setSSLVerification(false);
 
             if ($config->inDebugMode()) {
                 $builder->setLogger($container->make(LoggerInterface::class));
